@@ -1,30 +1,37 @@
 [
   {
     "text": "Каждый",
-    "color": "Красный"
+    "color": "Красный",
+    "language": "ru"
   },
   {
     "text": "Охотник",
-    "color": "Оранжевый"
+    "color": "Оранжевый",
+    "language": "ru"
   },
   {
     "text": "Желает",
-    "color": "Желтый"
+    "color": "Желтый",
+    "language": "ru"
   },
   {
     "text": "Знать",
-    "color": "Зеленый"
+    "color": "Зеленый",
+    "language": "ru"
   },
   {
     "text": "Где",
-    "color": "Голубой"
+    "color": "Голубой",
+    "language": "ru"
   },
   {
     "text": "Сидит",
-    "color": "Синий"
+    "color": "Синий",
+    "language": "ru"
   },
   {
     "text": "Фазан",
-    "color": "Фиолетовый"
+    "color": "Фиолетовый",
+    "language": "ru"
   }
 ]

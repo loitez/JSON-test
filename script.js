@@ -1,5 +1,26 @@
-
 const rainbows = document.querySelectorAll('.rainbow')
+const HTML = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Test Item</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <header>
+        <ul class="header-list">
+            <li>Меню 1</li>
+            <li>Меню 2</li>
+            <li>Меню 3</li>
+        </ul>
+    </header>
+    <div class="answer">
+    </div>
+    <script src="script-item.js"></script>
+    </body>
+    </html>
+`
 
 function createURL(element) {
     let classes = element.classList
@@ -20,7 +41,7 @@ rainbows.forEach((rainbow) => {
                 fillLists(data, i, rainbow, color)
                 openPage(color, data, i)
             }
-    })
+        })
 })
 
 function fillLists(data, i, parentNode, color) {
@@ -33,8 +54,9 @@ function fillLists(data, i, parentNode, color) {
 function openPage(item, data, i) {
     item.addEventListener('click', () => {
         setText(item, data, i)
-        window.open('index-item.html')
-
+        let opened = window.open(`index-item-${data[i].language}-${i}.html`)
+        console.log(`index-item-${data[i].language}-${i}.html`)
+        opened.document.write(HTML)
     })
 }
 
